@@ -1,14 +1,13 @@
 angular.module('HelloModule', [])
 
 .factory('uppercaseService', function() {
-    return function() {
-        return 'hello';
+    return function(str) {
+        return str.toUpperCase();
     }
 })
 
-.factory('helloService', function() {
+.factory('helloService', function(uppercaseService) {
     return function() {
-        console.log("Call uppercaseService from helloService");
         return uppercaseService('hello');
     }
 });

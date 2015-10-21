@@ -1,0 +1,23 @@
+{
+  "name": "AngularUnitTestMockExample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jettagozoom/AngularUnitTestMockExample",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "John Marks"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.23",
+    "angular-mocks": "1.2.23"
+  }
+}

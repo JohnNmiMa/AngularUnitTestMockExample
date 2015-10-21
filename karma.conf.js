@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Sep 03 2014 10:16:17 GMT-0600 (MDT)
+// Generated on Wed Oct 21 2015 14:23:09 GMT-0600 (MDT)
 
 module.exports = function(config) {
   config.set({
@@ -15,10 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './lib/angular.js',
-      './lib/angular-mocks.js',
+      './bower_components/angular/angular.js',
+      './bower_components/angular-mocks/angular-mocks.js',
       './app/**/*Spec.js',
-      './app/**/*.js',
+      './app/**/*.js'
     ],
 
 
@@ -53,7 +53,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
 
     // start these browsers
@@ -64,5 +64,5 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: true
-  });
-};
+  })
+}
